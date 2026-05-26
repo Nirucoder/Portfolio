@@ -59,13 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={[inter.variable, archivoBlack.variable, "font-display"].join(" ")} suppressHydrationWarning>
-      <head>
-        <Script
-          defer
-          src={process.env.UMAMI_DOMAIN}
-          data-website-id={process.env.UMAMI_SITE_ID}
-        ></Script>
-      </head>
+      <head />
       <body>
         <Providers>
           <Header />
@@ -73,6 +67,13 @@ export default function RootLayout({
           <Footer />
           <AppOverlays />
         </Providers>
+        {process.env.UMAMI_DOMAIN && (
+          <Script
+            defer
+            src={process.env.UMAMI_DOMAIN}
+            data-website-id={process.env.UMAMI_SITE_ID}
+          />
+        )}
         {process.env.NEXT_PUBLIC_GA_ID && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         )}

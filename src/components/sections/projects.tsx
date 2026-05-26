@@ -19,9 +19,9 @@ import SectionWrapper from "../ui/section-wrapper";
 
 const ProjectsSection = () => {
   return (
-    <SectionWrapper id="projects" className="max-w-7xl mx-auto md:h-[130vh]">
-      <SectionHeader id="projects" title="Projects" />
-      <div className="grid grid-cols-1 md:grid-cols-3">
+    <SectionWrapper id="projects" className="max-w-7xl mx-auto min-h-screen py-24 px-4 md:px-8">
+      <SectionHeader id="projects" title="Projects" className="mb-12" />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
@@ -79,12 +79,14 @@ const ProjectCard = ({ project }: { project: Project }) => {
                     Source
                   </Link>
                 )}
-                <Link href={project.live} target="_blank">
-                  <button className="group flex items-center gap-2 bg-primary text-primary-foreground text-sm font-medium px-4 py-1.5 rounded-full hover:bg-primary/80 transition-colors">
-                    Visit
-                    <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                  </button>
-                </Link>
+                {project.live && (
+                  <Link href={project.live} target="_blank">
+                    <button className="group flex items-center gap-2 bg-primary text-primary-foreground text-sm font-medium px-4 py-1.5 rounded-full hover:bg-primary/80 transition-colors">
+                      Visit
+                      <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
           </div>

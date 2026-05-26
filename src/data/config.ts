@@ -1,21 +1,23 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Nirattay Biswas | AI/ML Developer & Computer Science Student",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "First-year Computer Science & Engineering student at SRMIST, passionate about AI/ML systems and applied research. Building computer vision pipelines, LLM-powered applications, and full-stack prototypes. Explore projects like DRISHTI (AI drone surveillance), EXPLAIN_ML, Crisis Connect, and more.",
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "CS student at SRMIST building AI/ML systems, computer vision tools, and full-stack web apps. Open to research & internship opportunities.",
   },
   keywords: [
-    "Naresh",
+    "Nirattay",
+    "Nirattay Biswas",
+    "Nirucoder",
     "portfolio",
     "full-stack developer",
     "creative technologist",
     "web development",
     "3D animations",
     "interactive websites",
-    "Coding Ducks",
-    "The Booking Desk",
-    "Ghostchat",
+    "Swiggy Playground",
+    "EXPLAIN_ML",
+    "Image Classifier",
     "web design",
     "GSAP",
     "React",
@@ -23,23 +25,24 @@ const config = {
     "Spline",
     "Framer Motion",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
-  site: "https://nareshkhatri.site",
+  author: "Nirattay Biswas",
+  email: "nb3801@srmist.edu.in",
+  phone: "+91 8697698467",
+  site: "https://nirucoder.github.io",
 
   // for github stars button
-  githubUsername: "naresh-khatri",
-  githubRepo: "3d-portfolio",
+  githubUsername: "Nirucoder",
+  githubRepo: "Portfolio",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
+    twitter: "https://x.com/NirattayB",
+    linkedin: "https://www.linkedin.com/in/nirattay-biswas-729741379/",
+    instagram: "https://www.instagram.com/",
+    facebook: "https://www.facebook.com/",
+    github: "https://github.com/Nirucoder",
   },
 };
 export { config };
