@@ -1,186 +1,113 @@
-# 🚀 3D Portfolio
+# 🌌 Cosmic 3D Developer Portfolio
 
-A jaw-dropping developer portfolio packed with interactive 3D animations, buttery smooth transitions, and a space-themed aesthetic. Not your average portfolio template! This one has a fully interactive 3D keyboard where each keycap is a skill.
+Welcome to the repository of **Nirattay Biswas**, a first-year Computer Science & Engineering student at SRMIST, passionate about AI/ML systems and applied research. This portfolio is a state-of-the-art interactive experience featuring real-time 3D models, fluid physics animations, and custom visual dashboards.
 
-> **Free to use!** This portfolio is open source. If you use it, a credit/link back would be really appreciated 🙏
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Naresh-Khatri/3d-portfolio)
-
-![Portfolio Preview](https://github.com/Naresh-Khatri/Portfolio/blob/main/public/assets/projects-screenshots/portfolio/landing.png?raw=true)
-
-## ✨ Features
-
-- **Interactive 3D Keyboard** — Custom Spline keyboard where each keycap represents a skill, revealing titles and descriptions on hover/press
-- **Buttery Animations** — GSAP + Framer Motion powered scroll, hover, and reveal animations
-- **Space Theme** — Floating particles on a dark canvas for a cosmic vibe
-- **Light & Dark Mode** — Full theme support with cheeky disclaimer toasts
-- **Responsive** — Works across all screen sizes
-- **Contact Form** — Email delivery via Resend
-- **Analytics** _(optional)_ — Umami analytics integration
-
-## 🛠️ Tech Stack
-
-| Layer | Technologies |
-|---|---|
-| **Framework** | Next.js 14, React 18, TypeScript |
-| **Styling** | Tailwind CSS, Shadcn UI, Aceternity UI |
-| **Animation** | GSAP, Framer Motion |
-| **3D** | Spline Runtime |
-| **Email** | Resend |
-| **Misc** | Lenis (smooth scroll), Zod, next-themes |
+🚀 **Live Site:** [portfolio.nirucoder.com](https://github.com/Nirucoder/Portfolio) (Deploys automatically via Vercel)
 
 ---
 
-## 🚀 Getting Started
+## ✨ Features
+
+- **⌨️ Interactive 3D Keyboard** — A fully interactive custom Spline 3D keyboard where each keycap is a skill that responds to hover and click inputs.
+- **🌠 Space-themed Particle Universe** — Butter-smooth floating particles on a dark HSL-curated canvas built with GSAP and Framer Motion.
+- **⚡ High Performance** — Designed using Next.js 15, React 19, TypeScript, and modern Server Components for extreme loading speeds.
+- **🌓 Adaptive Theme Engine** — Vibrant transitions between light and dark modes with witty toast disclaimers.
+- **📬 Dynamic Sheets Webhook Contact Form** — An interactive serverless contact form that stores data in Google Sheets instantly.
+
+---
+
+## 🛠️ Flagship Projects Deployed
+
+### 🚁 1. DRISHTI (AFK Drishti)
+* **Category:** Computer Vision / AI drone surveillance
+* **Tech:** Python, OpenCV, Real-time Visual Tracking
+* **Repository:** [Nirucoder/Afk_Drishti](https://github.com/Nirucoder/Afk_Drishti)
+
+### 📊 2. EXPLAIN_ML
+* **Category:** Explainable AI (XAI)
+* **Tech:** Python, Streamlit, SHAP (Shapley Additive exPlanations)
+* **Live App:** [EXPLAIN_ML Dashboard](https://explainml-m8tjioxm5jrsmiffjfjgtg.streamlit.app/)
+* **Repository:** [Nirucoder/EXPLAIN_ML](https://github.com/Nirucoder/EXPLAIN_ML)
+
+### 🍔 3. Swiggy Playground
+* **Category:** Interactive Data Science
+* **Tech:** Python, Pandas, Streamlit
+* **Live App:** [Swiggy Playground Dashboard](https://swiggyplayground-rhachstnfgwrzf4wdxy35f.streamlit.app/)
+* **Repository:** [Nirucoder/Swiggy_playground](https://github.com/Nirucoder/Swiggy_playground)
+
+### 🖼️ 4. AI Image Classifier
+* **Category:** TypeScript / Full-stack AI
+* **Tech:** React, Tailwind CSS, TypeScript, Node.js, Vercel
+* **Live App:** [Image Classifier](https://evodoc-frontend.vercel.app)
+* **Repository:** [Nirucoder/image-classifier](https://github.com/Nirucoder/image-classifier)
+
+### 🚲 5. Bike Sharing Demand Predictor
+* **Category:** Predictive Data Science
+* **Tech:** Python, Machine Learning Pipelines, Pandas
+* **Repository:** [Nirucoder/Bike-sharing_insider](https://github.com/Nirucoder/Bike-sharing_insider)
+
+---
+
+## 💻 Tech Stack & Architecture
+
+| Category | Technologies |
+| :--- | :--- |
+| **Framework** | Next.js 15, React 19, TypeScript |
+| **Styling** | Vanilla CSS, Tailwind CSS, Shadcn UI, Aceternity UI |
+| **3D Engine** | Spline Runtime, Three.js |
+| **Animations** | GSAP (GreenSock), Framer Motion |
+| **Serverless Integration** | Resend (Email), Google Sheets Webhook (Contact Database) |
+
+---
+
+## 🚀 Getting Started Locally
 
 ### Prerequisites
-
-- Node.js (v18+)
-- pnpm (recommended), npm, or yarn
+* Node.js (v18+)
+* npm, yarn, or pnpm
 
 ### Installation
 
 1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/Naresh-Khatri/3d-portfolio.git
-    cd 3d-portfolio
-    ```
+   ```bash
+   git clone https://github.com/Nirucoder/Portfolio.git
+   cd Portfolio
+   ```
 
 2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-    ```bash
-    pnpm install
-    ```
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root directory:
+   ```env
+   GOOGLE_SHEETS_WEBHOOK_URL=your_google_sheets_webhook_url
+   RESEND_API_KEY=your_resend_api_key
+   NEXT_PUBLIC_WS_URL=your_optional_websocket_url
+   UMAMI_DOMAIN=your_optional_analytics_domain
+   UMAMI_SITE_ID=your_optional_analytics_site_id
+   ```
 
-3. **Set up environment variables:**
-
-    Copy `.env.example` to `.env.local` and fill in the values:
-
-    ```bash
-    cp .env.example .env.local
-    ```
-
-    | Variable | Required | Description |
-    |---|---|---|
-    | `RESEND_API_KEY` | Yes | API key from [Resend](https://resend.com) for the contact form |
-    | `NEXT_PUBLIC_WS_URL` | No | WebSocket server URL for realtime features (cursors, chat, presence) |
-    | `UMAMI_DOMAIN` | No | Umami analytics script URL |
-    | `UMAMI_SITE_ID` | No | Umami website ID |
-
-4. **Run the development server:**
-
-    ```bash
-    pnpm dev
-    ```
-
-5. Open [http://localhost:3000](http://localhost:3000) and see the magic ✨
+4. **Run the local development server:**
+   ```bash
+   npm run dev
+   ```
+   Open **[http://localhost:3000](http://localhost:3000)** to explore it!
 
 ---
 
-## 🎨 Make It Your Own
+## 🤖 Continuous Deployment (CI/CD)
 
-All personal info is centralized in [`src/data/config.ts`](src/data/config.ts). Edit this single file to rebrand the portfolio:
-
-```ts
-const config = {
-  title: "Your Name | Your Title",
-  description: {
-    long: "Your long description for SEO...",
-    short: "Your short description...",
-  },
-  keywords: ["your", "keywords"],
-  author: "Your Name",
-  email: "you@example.com",
-  site: "https://yoursite.com",
-
-  // GitHub stars button in the header
-  githubUsername: "your-github-username",
-  githubRepo: "your-repo-name",
-
-  social: {
-    twitter: "https://x.com/you",
-    linkedin: "https://linkedin.com/in/you",
-    instagram: "https://instagram.com/you",
-    facebook: "https://facebook.com/you",
-    github: "https://github.com/you",
-  },
-};
-```
-
-Other files you'll want to customize:
-
-| File | What to change |
-|---|---|
-| `src/data/projects.tsx` | Your projects, screenshots, descriptions, and tech stacks |
-| `src/data/constants.ts` | Skills list (name, description, icon) and work experience |
-| `public/assets/` | Your images, OG image, and project screenshots |
+This portfolio is optimized for **Vercel** with automatic pipelines:
+* **Production Deployments:** Any commit pushed to the `main` branch immediately triggers a new Vercel production build.
+* **Preview Deployments:** Commits on feature branches trigger isolated preview links to test new animations or models.
 
 ---
 
-## ⌨️ Updating the 3D Keyboard Skills
+## 📬 Let's Connect!
 
-The 3D keyboard keycaps are baked into a Spline file. To update the skills displayed on the keyboard:
-
-1. **Import** the `public/assets/skills-keyboard.spline` file into [Spline](https://spline.design/)
-2. **Unhide** the keycap objects you want to edit
-3. **Update** the logo images on each keycap to your new skill icons
-4. **Rename** each keycap object to match the skill's `name` field in `src/data/constants.ts` (e.g. `js`, `react`, `docker`)
-5. **Hide** all keycap objects again
-6. **Export** the scene and overwrite `public/assets/skills-keyboard.spline`
-
-After updating the Spline file, make sure `src/data/constants.ts` has matching entries for every skill on the keyboard:
-
-```ts
-// Each keycap object name in Spline must match a key in SKILLS
-export const SKILLS: Record<SkillNames, Skill> = {
-  js: { name: "js", label: "JavaScript", shortDescription: "...", ... },
-  react: { name: "react", label: "React", shortDescription: "...", ... },
-  // ... add/remove entries to match your keyboard
-};
-```
-
-The `SkillNames` enum, `SKILLS` record, and the Spline keycap names must all stay in sync for the keyboard interactions to work correctly.
-
----
-
-## 🔌 Realtime Features (Optional)
-
-The portfolio supports optional realtime features powered by a **separate backend API**:
-
-- 🖱️ **Live cursors** — See other visitors' cursors in realtime
-- 👥 **Online presence** — Shows who's currently on the site
-- 💬 **Chat** — Live chat between visitors
-
-These features activate automatically when the `NEXT_PUBLIC_WS_URL` environment variable is set. Without it, the portfolio works perfectly fine as a static site — no realtime features, no backend dependency.
-
-> [!NOTE]
-> The backend API is **not open source**. This is intentional! Too many people have cloned the portfolio and claimed they built it from scratch. The realtime server stays private to keep the live experience unique make make it standout.
-
-
----
-
-## 🚀 Deployment
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Naresh-Khatri/3d-portfolio)
-
-This site is deployed on **Vercel**. To deploy your own:
-
-1. Push your code to a GitHub repository
-2. Connect the repository to [Vercel](https://vercel.com)
-3. Add your environment variables in the Vercel dashboard
-4. Vercel handles the rest — automatic deployments on every push
-
----
-
-## 🤝 Contributing
-
-If you'd like to contribute or suggest improvements, feel free to open an issue or submit a pull request. All contributions are welcome!
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-If you use this portfolio, a credit or link back to the [original repo](https://github.com/Naresh-Khatri/3d-portfolio) would be much appreciated ❤️
+* **LinkedIn:** [Nirattay Biswas](https://www.linkedin.com/in/nirattay-biswas-729741379/)
+* **Twitter:** [@NirattayB](https://x.com/NirattayB)
+* **Email:** [nb3801@srmist.edu.in](mailto:nb3801@srmist.edu.in)
+* **GitHub:** [@Nirucoder](https://github.com/Nirucoder)
