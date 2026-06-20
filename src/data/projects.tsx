@@ -168,6 +168,75 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    id: "striver-sheet-fine-tuned",
+    category: "JavaScript / Full-Stack",
+    title: "StudyOS",
+    src: "/assets/projects-screenshots/striver_sheet.png",
+    screenshots: ["striver_sheet.png"],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.firebase,
+        PROJECT_SKILLS.oauth,
+      ],
+    },
+    live: "https://striver-sheet-fine-tuned.vercel.app",
+    github: "https://github.com/Nirucoder/Striver-sheet-fine-tuned",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            StudyOS
+          </TypographyP>
+          <TypographyP className="font-mono">
+            A customized, fine-tuned platform for DSA preparation based on Striver's SDE sheet. Includes an interactive dashboard, progress tracking, and detailed analytics for tracking problem-solving journeys.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
+    id: "image-classifier",
+    category: "TypeScript / Full-Stack",
+    title: "MedClassify",
+    src: "/assets/projects-screenshots/image_classifier.png",
+    screenshots: ["image_classifier.png"],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.node,
+        PROJECT_SKILLS.supabase,
+        PROJECT_SKILLS.oauth,
+      ],
+    },
+    live: "https://image-classifier-ten.vercel.app/",
+    github: "https://github.com/Nirucoder/image-classifier",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            AI-Powered Image Classifier
+          </TypographyP>
+          <TypographyP className="font-mono">
+            An AI-powered full-stack image classification system. Upload medical documents (prescriptions, lab reports, etc.) to get high-speed, accurate predictions with a modern, responsive UI.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
     id: "personal-portfolio",
     category: "TypeScript / Full-Stack",
     title: "Personal Portfolio",
@@ -198,7 +267,6 @@ const projects: Project[] = [
       );
     },
   },
-
   {
     id: "explain-ml",
     category: "Machine Learning / XAI",
@@ -223,7 +291,7 @@ const projects: Project[] = [
             Explainable AI Dashboard
           </TypographyP>
           <TypographyP className="font-mono">
-            EXPLAIN_ML is an explainable AI dashboard. It trains a model on your data, reveals feature importance, and explains individual predictions using SHAP values. Designed to make black-box Machine Learning transparent and understandable.
+            An explainable AI dashboard designed to make black-box models transparent. Train models on custom datasets, reveal feature importance, and explain individual predictions using SHAP values.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -254,40 +322,7 @@ const projects: Project[] = [
             Interactive Swiggy Data Dashboard
           </TypographyP>
           <TypographyP className="font-mono">
-            An interactive data exploration playground built on Swiggy datasets — analyze food delivery trends, restaurant metrics, and ordering patterns with visual dashboards.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-        </div>
-      );
-    },
-  },
-  {
-    id: "image-classifier",
-    category: "TypeScript / Full-Stack",
-    title: "MedClassify",
-    src: "/assets/projects-screenshots/image_classifier.png",
-    screenshots: ["image_classifier.png"],
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [
-        PROJECT_SKILLS.ts,
-        PROJECT_SKILLS.node,
-      ],
-    },
-    live: "https://image-classifier-ten.vercel.app/",
-    github: "https://github.com/Nirucoder/image-classifier",
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono text-2xl text-center">
-            AI-Powered Image Classifier
-          </TypographyP>
-          <TypographyP className="font-mono">
-            A full-stack image classification application built with TypeScript. Upload an image and get AI-powered predictions. Features a modern UI deployed on Vercel.
+            A real-time data exploration and forecasting playground. Analyzes food delivery trends, restaurant metrics, and ordering patterns using historical data and live scraping.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -316,7 +351,7 @@ const projects: Project[] = [
             Drishti Computer Vision
           </TypographyP>
           <TypographyP className="font-mono">
-            A Python-based computer vision project — "Drishti" means vision in Sanskrit. Implements real-time visual tracking and analysis using modern OpenCV techniques.
+            An edge AI tactical surveillance system simulation. Integrates hardware IoT sensors with a live command dashboard for real-time threat detection and situational awareness.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -345,39 +380,7 @@ const projects: Project[] = [
             Bike-sharing Demand Prediction
           </TypographyP>
           <TypographyP className="font-mono">
-            Data science project analyzing bike-sharing patterns and demand prediction. Uncovers usage trends, peak hours, and seasonal patterns from real city datasets.
-          </TypographyP>
-          <ProjectsLinks live={this.live} repo={this.github} />
-        </div>
-      );
-    },
-  },
-  {
-    id: "striver-sheet-fine-tuned",
-    category: "JavaScript / Full-Stack",
-    title: "StudyOS",
-    src: "/assets/projects-screenshots/striver_sheet.png",
-    screenshots: ["striver_sheet.png"],
-    skills: {
-      frontend: [
-        PROJECT_SKILLS.js,
-        PROJECT_SKILLS.react,
-        PROJECT_SKILLS.tailwind,
-      ],
-      backend: [
-        PROJECT_SKILLS.node,
-      ],
-    },
-    live: "https://striver-sheet-fine-tuned.vercel.app",
-    github: "https://github.com/Nirucoder/Striver-sheet-fine-tuned",
-    get content() {
-      return (
-        <div>
-          <TypographyP className="font-mono text-2xl text-center">
-            StudyOS
-          </TypographyP>
-          <TypographyP className="font-mono">
-            A customized and fine-tuned version of Striver's SDE sheet for DSA preparation. Includes progress tracking, custom features, and an interactive UI for tracking problem-solving journey.
+            A data science project focusing on analyzing bike-sharing patterns and predicting demand. Uncovers usage trends, peak hours, and seasonal impacts from real-world city datasets.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -409,13 +412,12 @@ const projects: Project[] = [
             KrishiSevak E-Summit Platform
           </TypographyP>
           <TypographyP className="font-mono">
-            An agricultural tech platform built during E-Summit to empower farmers. Features include modern web technologies for delivering critical agricultural services and information.
+            An agricultural tech platform built during E-Summit to empower farmers. Delivers critical agricultural services, weather updates, and farming information through a modern web interface.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
       );
     },
-  },
-];
+  }];
 
 export default projects;
