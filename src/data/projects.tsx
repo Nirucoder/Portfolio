@@ -148,6 +148,38 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    id: "personal-portfolio",
+    category: "TypeScript / Full-Stack",
+    title: "Personal Portfolio",
+    src: "/assets/projects-screenshots/portfolio.png",
+    screenshots: ["portfolio.png"],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.next,
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [],
+    },
+    live: "https://nirattaybiswas.vercel.app/",
+    github: "https://github.com/Nirucoder/Portfolio",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            Interactive Developer Portfolio
+          </TypographyP>
+          <TypographyP className="font-mono">
+            A modern, highly interactive personal portfolio built with Next.js, React, and Tailwind CSS. Features dynamic animations, a responsive design, and an interactive project showcase.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+
+  {
     id: "explain-ml",
     category: "Machine Learning / XAI",
     title: "EXPLAIN_ML",
