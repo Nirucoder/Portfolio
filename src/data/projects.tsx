@@ -226,7 +226,7 @@ const projects: Project[] = [
         PROJECT_SKILLS.node,
       ],
     },
-    live: "https://evodoc-frontend.vercel.app",
+    live: "https://image-classifier-ten.vercel.app/",
     github: "https://github.com/Nirucoder/image-classifier",
     get content() {
       return (
