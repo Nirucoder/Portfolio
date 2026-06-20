@@ -316,7 +316,7 @@ export const EXPERIENCE: Experience[] = [
     startDate: "2025",
     endDate: "Present",
     title: "AI/ML Engineer (Intern)",
-    company: "Evodoq HealthTech — SRMIST Incubated Startup",
+    company: "Evodoc HealthTech — SRMIST Incubated Startup",
     description: [
       "Architected a clinical decision support system using a hybrid LLM pipeline.",
       "Integrated MedGemma 70B for high-precision clinical reasoning and Llama 3.1 8B for efficient data retrieval.",

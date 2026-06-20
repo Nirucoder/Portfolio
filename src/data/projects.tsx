@@ -212,7 +212,7 @@ const projects: Project[] = [
   {
     id: "image-classifier",
     category: "TypeScript / Full-Stack",
-    title: "Evodoc",
+    title: "Evodoc MedClassify",
     src: "/assets/projects-screenshots/image_classifier.png",
     screenshots: ["image_classifier.png"],
     skills: {
