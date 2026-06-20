@@ -212,7 +212,7 @@ const projects: Project[] = [
   {
     id: "image-classifier",
     category: "TypeScript / Full-Stack",
-    title: "Image Classifier",
+    title: "Evodoc",
     src: "/assets/projects-screenshots/image_classifier.png",
     screenshots: ["image_classifier.png"],
     skills: {
@@ -304,8 +304,8 @@ const projects: Project[] = [
     id: "striver-sheet-fine-tuned",
     category: "JavaScript / Full-Stack",
     title: "Striver Sheet Fine Tuned",
-    src: "",
-    screenshots: [],
+    src: "/assets/projects-screenshots/striver_sheet.png",
+    screenshots: ["striver_sheet.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.js,
@@ -336,8 +336,8 @@ const projects: Project[] = [
     id: "esummit-krishisevak",
     category: "TypeScript / Full-Stack",
     title: "KrishiSevak",
-    src: "",
-    screenshots: [],
+    src: "/assets/projects-screenshots/krishi_sevak.png",
+    screenshots: ["krishi_sevak.png"],
     skills: {
       frontend: [
         PROJECT_SKILLS.ts,
