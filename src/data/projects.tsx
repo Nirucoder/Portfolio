@@ -300,6 +300,70 @@ const projects: Project[] = [
       );
     },
   },
+  {
+    id: "striver-sheet-fine-tuned",
+    category: "JavaScript / Full-Stack",
+    title: "Striver Sheet Fine Tuned",
+    src: "",
+    screenshots: [],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.js,
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+      ],
+    },
+    live: "https://striver-sheet-fine-tuned.vercel.app",
+    github: "https://github.com/Nirucoder/Striver-sheet-fine-tuned",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            Striver SDE Sheet Platform
+          </TypographyP>
+          <TypographyP className="font-mono">
+            A customized and fine-tuned version of Striver's SDE sheet for DSA preparation. Includes progress tracking, custom features, and an interactive UI for tracking problem-solving journey.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
+    id: "esummit-krishisevak",
+    category: "TypeScript / Full-Stack",
+    title: "KrishiSevak",
+    src: "",
+    screenshots: [],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.next,
+        PROJECT_SKILLS.tailwind,
+      ],
+      backend: [
+        PROJECT_SKILLS.node,
+      ],
+    },
+    live: "https://esummit-krishi-sevak.vercel.app",
+    github: "https://github.com/Nirucoder/Esummit_KrishiSevak",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono text-2xl text-center">
+            KrishiSevak E-Summit Platform
+          </TypographyP>
+          <TypographyP className="font-mono">
+            An agricultural tech platform built during E-Summit to empower farmers. Features include modern web technologies for delivering critical agricultural services and information.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
 ];
 
 export default projects;
