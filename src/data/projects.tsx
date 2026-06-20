@@ -15,6 +15,8 @@ import {
   SiTailwindcss,
   SiTypescript,
   SiStreamlit,
+  SiFirebase,
+  SiSupabase,
 } from "react-icons/si";
 
 const BASE_PATH = "/assets/projects-screenshots";
@@ -125,6 +127,24 @@ const PROJECT_SKILLS = {
     bg: "black",
     fg: "white",
     icon: <RiReactjsFill />,
+  },
+    firebase: {
+    title: "Firebase",
+    bg: "black",
+    fg: "white",
+    icon: <SiFirebase />,
+  },
+  supabase: {
+    title: "Supabase",
+    bg: "black",
+    fg: "white",
+    icon: <SiSupabase />,
+  },
+  oauth: {
+    title: "OAuth",
+    bg: "black",
+    fg: "white",
+    icon: <SiFirebase />,
   },
   streamlit: {
     title: "Streamlit",
