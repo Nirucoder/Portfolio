@@ -212,7 +212,7 @@ const projects: Project[] = [
   {
     id: "image-classifier",
     category: "TypeScript / Full-Stack",
-    title: "Evodoc MedClassify",
+    title: "MedClassify",
     src: "/assets/projects-screenshots/image_classifier.png",
     screenshots: ["image_classifier.png"],
     skills: {
@@ -303,7 +303,7 @@ const projects: Project[] = [
   {
     id: "striver-sheet-fine-tuned",
     category: "JavaScript / Full-Stack",
-    title: "Striver Sheet Fine Tuned",
+    title: "StudyOS",
     src: "/assets/projects-screenshots/striver_sheet.png",
     screenshots: ["striver_sheet.png"],
     skills: {
@@ -322,7 +322,7 @@ const projects: Project[] = [
       return (
         <div>
           <TypographyP className="font-mono text-2xl text-center">
-            Striver SDE Sheet Platform
+            StudyOS
           </TypographyP>
           <TypographyP className="font-mono">
             A customized and fine-tuned version of Striver's SDE sheet for DSA preparation. Includes progress tracking, custom features, and an interactive UI for tracking problem-solving journey.
